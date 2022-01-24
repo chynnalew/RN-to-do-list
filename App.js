@@ -38,7 +38,7 @@ export default function App(){
             renderItem={itemData=>( 
               <ToDoItem
                 title={itemData.item.value}
-                onDelete={deleteTaskHandler}
+                onDelete={handleDeleteTask}
                 id={itemData.item.id}/>
               )}
             ></FlatList>

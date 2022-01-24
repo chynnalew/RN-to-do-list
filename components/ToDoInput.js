@@ -32,7 +32,7 @@ const ToDoInput = props => {
                         <Button title="CANCEL" color="red" onPress={props.onCancel}></Button>
                     </View>
                     <View style={styles.button}>
-                        
+                        <Button title="ADD" color="green" onPress={()=> checkInput(enteredTask)}></Button>
                     </View>
                 </View>
             </View>
