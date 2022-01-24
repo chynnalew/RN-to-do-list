@@ -19,4 +19,10 @@ export default function App(){
       return currentTasks.filter(task => task.id !== taskId);
     })
   }
+
+  const HandleCancelAddTask = () => {
+    setAddTasks(false);
+  }
+
+  
 }
