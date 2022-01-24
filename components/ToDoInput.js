@@ -31,7 +31,9 @@ const ToDoInput = props => {
                     <View style={styles.button}>
                         <Button title="CANCEL" color="red" onPress={props.onCancel}></Button>
                     </View>
-                    <View style={styles.button} title="ADD" color="green" onPress={()=> checkInput(enteredTask)}/>
+                    <View style={styles.button}>
+                        
+                    </View>
                 </View>
             </View>
         </Modal>
