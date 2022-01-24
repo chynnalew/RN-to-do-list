@@ -1,5 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, CheckBox} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import BouncyCheckbox from 'react-native-bouncy-checkbox';
 
 const ToDoItem = props => {
     const[check, setCheck] = React.useState(false);
@@ -9,7 +10,7 @@ const ToDoItem = props => {
             <View style={styles.listItem}>
                 <Text>{props.title}</Text>
             </View>
-            <CheckBox value={check} onValueChange={()=>setCheck(!check)}/>
+            <BouncyCheckbox value={check} onValueChange={()=>setCheck(!check)}/>
             <TouchableOpacity onPress={props.onDelete.bind(this, props.id)} style={styles.button}>
                 <Text style={styles.text}>Delete</Text>
             </TouchableOpacity>
