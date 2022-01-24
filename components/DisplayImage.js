@@ -12,10 +12,10 @@ const DisplayImage = props => {
 }
 const styles = StyleSheet.create({
     image: {
-        width: 250,
-        height: 250,
+        width:250,
+        height: 150,
         margin: 'auto',
-        marginTop: 200
+        marginTop: 10,
     }
 })
 

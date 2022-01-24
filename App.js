@@ -26,7 +26,7 @@ export default function App(){
 
   return(
     <View>
-      <Header title="To-Do-App"></Header>
+      <Header title="To Do App"></Header>
       <View style={styles.screen}>
         <Button title="Add New Task" onPress={()=> setAddTasks(true)}></Button>
         <ToDoInput visible={addTasks} onAddTask={handleAddTask} onCancel={handleCancelAddTask}/>

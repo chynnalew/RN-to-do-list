@@ -24,7 +24,7 @@ const ToDoInput = props => {
 
     return(
         <Modal visible={props.visible} animationType="slide">
-            <Header title="To-Do-App"></Header>
+            <Header title="To Do App"></Header>
             <View style={styles.inputContainer}>
                 <TextInput placeholder="Task" style={styles.input} onChangeText={HandleToDoInput} value={enteredTask}/>
                 <View style={styles.buttonContainer}>

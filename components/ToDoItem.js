@@ -10,7 +10,7 @@ const ToDoItem = props => {
             <View style={styles.listItem}>
                 <Text>{props.title}</Text>
             </View>
-            <BouncyCheckbox value={check} onValueChange={()=>setCheck(!check)}/>
+            <BouncyCheckbox style={styles.check} value={check} onValueChange={()=>setCheck(!check)}/>
             <TouchableOpacity onPress={props.onDelete.bind(this, props.id)} style={styles.button}>
                 <Text style={styles.text}>Delete</Text>
             </TouchableOpacity>
@@ -38,16 +38,11 @@ const styles = StyleSheet.create({
         padding: 10,
         backgroundColor: 'red',
         alignItems: 'center',
-        justifyContent: 'center'
-    },
-    buttonGreen:{
-        display:'flex',
-        height:40,
-        borderRadius: 5,
-        padding: 10,
-        backgroundColor: 'green',
-        alignItems: 'center',
         justifyContent: 'center',
+    },
+    check: {
+        marginLeft:5,
+
     },
     text: {
         fontSize: 14,
